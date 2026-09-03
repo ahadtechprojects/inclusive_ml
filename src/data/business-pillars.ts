@@ -118,6 +118,7 @@ export const businessPillars: BusinessPillar[] = [
     ],
     placeholderLabel: "CONSULTING & HUMAN CAPITAL — CORPORATE ADVISORY & TRAINING",
     placeholderDescription: "Replace with approved IML corporate advisory sessions, executive workshops, or professional training imagery.",
-    strategicValue: "Builds institutional capacity, optimizing operating models and nurturing human capital for sustainable corporate growth."
+    strategicValue: "Builds institutional capacity, optimizing operating models and nurturing human capital for sustainable corporate growth.",
+    imageSrc: "/images/consulting-iml.jpg"
   }
 ];

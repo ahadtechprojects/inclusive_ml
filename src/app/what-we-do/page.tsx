@@ -108,11 +108,11 @@ export default function WhatWeDoPage() {
                       </ul>
                     </div>
 
-                    <div className="mt-8 flex items-center gap-4">
-                      <Button href="/contact" size="md">
+                    <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                      <Button href="/contact" size="md" className="w-full sm:w-auto justify-center">
                         <span>Enquire About {pillar.title}</span>
                       </Button>
-                      <Button href="/partnerships" variant="outline" size="md">
+                      <Button href="/partnerships" variant="outline" size="md" className="w-full sm:w-auto justify-center">
                         <span>Partner With This Division</span>
                       </Button>
                     </div>

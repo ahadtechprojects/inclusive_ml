@@ -110,11 +110,10 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                       <Link
                         href={item.href}
                         onClick={onClose}
-                        className={`flex items-center justify-between px-4 py-3.5 rounded-2xl text-base font-medium transition-all ${
-                          isActive
+                        className={`flex items-center justify-between px-4 py-3.5 rounded-2xl text-base font-medium transition-all ${isActive
                             ? "bg-primary text-white font-semibold shadow-md ring-2 ring-primary/30"
                             : "liquid-glass-card text-foreground hover:border-primary/40"
-                        }`}
+                          }`}
                       >
                         <span>{item.label}</span>
                         <ArrowRight className={`w-4 h-4 transition-transform ${isActive ? "text-white" : "text-muted-foreground"}`} />
@@ -137,7 +136,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                 size="lg"
                 onClick={onClose}
               >
-                Let&apos;s Talk / Contact IML
+                Contact IML
               </Button>
 
               <p className="text-[11px] text-center text-muted-foreground">

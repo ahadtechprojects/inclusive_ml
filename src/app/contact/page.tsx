@@ -10,7 +10,9 @@ import {
   Clock,
   ShieldCheck,
   Building2,
+  Globe,
 } from "lucide-react";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 
 export const metadata: Metadata = {
   title: "Contact Us | Inclusive Market Limited (IML)",
@@ -125,6 +127,19 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              {/* Official Social Media Channels */}
+              <div className="p-8 rounded-3xl liquid-glass shadow-lg text-card-foreground">
+                <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-3 flex items-center gap-2">
+                  <Globe className="w-4 h-4 text-primary" />
+                  <span>Official Social Channels</span>
+                </h3>
+                <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
+                  Connect with Inclusive Market Limited across our official social platforms for corporate news, announcements, and trade insights.
+                </p>
+
+                <SocialLinks showLabels={true} size="md" />
               </div>
 
               {/* Information Authenticity Notice */}

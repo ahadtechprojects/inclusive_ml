@@ -24,12 +24,12 @@ export function PartnershipsCTA() {
                 We partner with manufacturers, regional suppliers, commodity producers, distributors, and technology leaders to structure high-integrity commercial agreements and distribution networks.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <Button href="/partnerships" size="lg" className="gap-2">
+              <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                <Button href="/partnerships" size="lg" className="gap-2 w-full sm:w-auto justify-center">
                   <span>Explore Partnership Models</span>
                   <ArrowRight className="w-4 h-4" />
                 </Button>
-                <Button href="/contact" variant="outline" size="lg">
+                <Button href="/contact" variant="outline" size="lg" className="w-full sm:w-auto justify-center">
                   <span>Contact Strategic Team</span>
                 </Button>
               </div>

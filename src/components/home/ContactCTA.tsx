@@ -30,11 +30,11 @@ export function ContactCTA() {
           Connect directly with our commercial, logistics, or technology advisory teams to explore how Inclusive Market Limited can support your corporate objectives.
         </p>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full max-w-md sm:max-w-none mx-auto">
           <Button
             href="/contact"
             size="lg"
-            className="bg-white text-primary hover:bg-white/90 font-bold shadow-lg gap-2"
+            className="bg-white text-primary hover:bg-white/90 font-bold shadow-lg gap-2 w-full sm:w-auto justify-center"
           >
             <span>Start a Conversation</span>
             <ArrowRight className="w-4 h-4 text-primary" />
@@ -43,7 +43,7 @@ export function ContactCTA() {
             href="/about"
             variant="ghost"
             size="lg"
-            className="text-white hover:bg-white/15 border border-white/20"
+            className="text-white hover:bg-white/15 border border-white/20 w-full sm:w-auto justify-center"
           >
             <span>Read Corporate Profile</span>
           </Button>

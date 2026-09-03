@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { footerCompanyLinks, footerPillarLinks } from "@/data/navigation";
 import { companyData } from "@/data/company";
 import { ArrowUpRight, ShieldCheck, Mail, MapPin, Clock } from "lucide-react";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 
 export function Footer() {
   const currentYear = 2026;
@@ -36,6 +37,14 @@ export function Footer() {
             <div className="pt-2 flex items-center gap-2 text-xs text-foreground/80 font-medium">
               <ShieldCheck className="w-4 h-4 text-primary" />
               <span>Incorporated under CAMA 2020</span>
+            </div>
+
+            {/* Social media channels */}
+            <div className="pt-2 flex flex-col space-y-2">
+              <span className="text-xs font-semibold text-foreground/90 uppercase tracking-wider">
+                Official Channels
+              </span>
+              <SocialLinks size="sm" />
             </div>
           </div>
 

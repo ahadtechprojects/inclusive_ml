@@ -32,7 +32,7 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`sticky top-0 z-40 w-full transition-all duration-300 ${scrolled
+        className={`sticky top-0 z-40 max-w-7xl m-4 rounded-lg mt-5 transition-all duration-300 ${scrolled
           ? "liquid-glass border-b border-white/20 dark:border-white/10 shadow-sm"
           : "bg-background/60 backdrop-blur-md border-b border-border/40"
           }`}

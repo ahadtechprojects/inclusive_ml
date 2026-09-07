@@ -3,6 +3,7 @@ import { NavItem } from "@/types";
 export const mainNavItems: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Corporate Profile", href: "/corporate-profile" },
   { label: "What We Do", href: "/what-we-do" },
   { label: "Partnerships", href: "/partnerships" },
   { label: "Contact", href: "/contact" },
@@ -10,6 +11,7 @@ export const mainNavItems: NavItem[] = [
 
 export const footerCompanyLinks: NavItem[] = [
   { label: "About IML", href: "/about" },
+  { label: "Corporate Profile", href: "/corporate-profile" },
   { label: "What We Do", href: "/what-we-do" },
   { label: "Partnerships", href: "/partnerships" },
   { label: "Contact Us", href: "/contact" },

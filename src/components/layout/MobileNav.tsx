@@ -8,6 +8,7 @@ import { X, ArrowRight } from "lucide-react";
 import { mainNavItems } from "@/data/navigation";
 import { Button } from "@/components/ui/Button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface MobileNavProps {
@@ -56,7 +57,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 bg-black/40 backdrop-blur-md"
+            className="fixed inset-0 bg-black/40 backdrop-blur-sm"
             onClick={onClose}
             aria-hidden="true"
           />
@@ -81,10 +82,10 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                   </div>
                   <div className="flex flex-col">
                     <span className="font-bold text-foreground tracking-tight text-sm">
-                      Inclusive Market Limited
+                      Inclusive Market
                     </span>
                     <span className="text-[11px] text-muted-foreground uppercase tracking-wider">
-                      Corporate Menu
+                      Limited
                     </span>
                   </div>
                 </div>
@@ -98,29 +99,31 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
               </div>
 
               <nav className="mt-6 flex flex-col gap-2">
-                {mainNavItems.map((item, index) => {
-                  const isActive = pathname === item.href;
-                  return (
-                    <motion.div
-                      key={item.href}
-                      initial={{ opacity: 0, y: 15 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.05 + index * 0.04 }}
-                    >
-                      <Link
-                        href={item.href}
-                        onClick={onClose}
-                        className={`flex items-center justify-between px-4 py-3.5 rounded-2xl text-base font-medium transition-all ${isActive
+                {mainNavItems
+                  .filter((item) => item.href !== "/contact")
+                  .map((item, index) => {
+                    const isActive = pathname === item.href;
+                    return (
+                      <motion.div
+                        key={item.href}
+                        initial={{ opacity: 0, y: 15 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.05 + index * 0.04 }}
+                      >
+                        <Link
+                          href={item.href}
+                          onClick={onClose}
+                          className={`flex items-center justify-between px-4 py-3.5 rounded-2xl text-base font-medium transition-all ${isActive
                             ? "bg-primary text-white font-semibold shadow-md ring-2 ring-primary/30"
                             : "liquid-glass-card text-foreground hover:border-primary/40"
-                          }`}
-                      >
-                        <span>{item.label}</span>
-                        <ArrowRight className={`w-4 h-4 transition-transform ${isActive ? "text-white" : "text-muted-foreground"}`} />
-                      </Link>
-                    </motion.div>
-                  );
-                })}
+                            }`}
+                        >
+                          <span>{item.label}</span>
+                          <ArrowRight className={`w-4 h-4 transition-transform ${isActive ? "text-white" : "text-muted-foreground"}`} />
+                        </Link>
+                      </motion.div>
+                    );
+                  })}
               </nav>
             </div>
 
@@ -138,6 +141,13 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
               >
                 Contact IML
               </Button>
+
+              <div className="pt-2 flex flex-col items-center justify-center gap-2.5">
+                <span className="text-[11px] font-medium text-muted-foreground uppercase tracking-wider">
+                  Official Channels
+                </span>
+                <SocialLinks size="sm" className="justify-center" />
+              </div>
 
               <p className="text-[11px] text-center text-muted-foreground">
                 RC CAMA 2020 • Inclusive Market Limited

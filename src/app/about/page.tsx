@@ -12,12 +12,14 @@ import {
   HeartHandshake,
   Scale,
   CheckCircle2,
+  ArrowRight,
+  FileText,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us | Inclusive Market Limited (IML)",
   description:
-    "Learn about Inclusive Market Limited (IML), a Nigerian private corporate enterprise incorporated under CAMA 2020 with diversified capabilities across commerce, logistics, technology, and business services.",
+    "Learn about Inclusive Market Limited (IML), a Nigerian brand alignment, strategic communications, and market access consultancy incorporated under CAMA 2020.",
 };
 
 export default function AboutPage() {
@@ -34,8 +36,20 @@ export default function AboutPage() {
               Institutional Foundation. Diversified Commercial Vision.
             </h1>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Inclusive Market Limited is an incorporated corporate entity designed to bridge commercial supply chains, modern storage infrastructure, multimodal logistics, and digital systems across Nigeria and beyond.
+              Inclusive Market Limited is a Nigerian-based brand alignment, strategic communications, and market access consultancy built to help organizations turn visibility into authority, and authority into trust.
             </p>
+
+            {/* Direct Navigation to Corporate Profile */}
+            <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto">
+              <Button href="/corporate-profile" size="lg" className="shadow-md gap-2 justify-center">
+                <FileText className="w-4 h-4" />
+                <span>View Full Corporate Profile</span>
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+              <Button href="/what-we-do" variant="outline" size="lg" className="justify-center">
+                <span>Explore Capabilities</span>
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
@@ -50,16 +64,16 @@ export default function AboutPage() {
                   Who We Are
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mt-1">
-                  Bridging Market Opportunities with Operational Rigor
+                  Turning Visibility into Authority, and Authority into Trust
                 </h2>
               </div>
 
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Founded under the <strong>Companies and Allied Matters Act, 2020 (CAMA)</strong> as a private company limited by shares, Inclusive Market Limited (IML) operates with a mandate that spans six synergistic business sectors.
+                Registered under the <strong>Companies and Allied Matters Act, 2020 (CAMA)</strong> as a private company limited by shares, Inclusive Market Limited (IML) operates with a mandate that spans strategic communications, market research, business advisory, and market access services.
               </p>
 
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                We believe that modern commerce in expanding economies requires an integrated approach. By aligning product sourcing with secure storage, dependable transit logistics, and digital automation, we provide an operational ecosystem that enables businesses to thrive.
+                Our founding conviction is simple: most organizations today are not short on activity. Campaigns are running. Content is flowing. PR is happening. Yet something still feels off. That is not a marketing problem—it is an alignment problem. Influence is not accidental; it is aligned.
               </p>
 
               <div className="p-5 rounded-xl border border-border bg-card shadow-xs">
@@ -102,13 +116,13 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Vision, Mission, Values (Factually Defensible Placeholders) */}
+      {/* Vision, Mission, Values */}
       <section className="py-16 sm:py-20 bg-secondary/30 border-y border-border/80">
         <Container size="wide">
           <SectionHeader
             badge="Guiding Direction"
             title="Vision, Mission & Corporate Values"
-            description="Our organizational direction is anchored on delivering dependable, long-term commercial value to partners and stakeholders."
+            description="Our organizational direction is anchored on empowering grassroots commerce, building institutional authority, and delivering sustainable national impact."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -116,16 +130,16 @@ export default function AboutPage() {
             <div className="p-8 rounded-3xl liquid-glass text-card-foreground flex flex-col justify-between shadow-lg">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-accent text-accent-foreground flex items-center justify-center mb-6">
-                  <Compass className="w-6 h-6" />
+                  <Compass className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-3">Corporate Vision</h3>
-                <div className="p-4 rounded-xl bg-muted/60 border border-border/80 text-xs text-muted-foreground italic leading-relaxed">
-                  &ldquo;To be a premier integrated commercial and service gateway, establishing dependable trade corridors, modern storage infrastructure, and technological excellence across regional markets.&rdquo;
+                <div className="p-4 rounded-xl bg-muted/60 border border-border/80 text-xs sm:text-sm text-foreground italic leading-relaxed">
+                  &ldquo;To build Nigeria&apos;s largest verified database of women entrepreneurs, creating a data-driven ecosystem that bridges economic inclusion, political engagement, and sustainable national development.&rdquo;
                 </div>
               </div>
-              <div className="mt-6 pt-4 border-t border-border/60 text-[11px] text-muted-foreground/80 flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary/70" />
-                <span>Approved Corporate Direction Slot</span>
+              <div className="mt-6 pt-4 border-t border-border/60 text-[11px] text-muted-foreground flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>National Database & Ecosystem</span>
               </div>
             </div>
 
@@ -133,16 +147,16 @@ export default function AboutPage() {
             <div className="p-8 rounded-3xl liquid-glass text-card-foreground flex flex-col justify-between shadow-lg">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-accent text-accent-foreground flex items-center justify-center mb-6">
-                  <Target className="w-6 h-6" />
+                  <Target className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-3">Corporate Mission</h3>
-                <div className="p-4 rounded-xl bg-muted/60 border border-border/80 text-xs text-muted-foreground italic leading-relaxed">
-                  &ldquo;To connect producers, businesses, and markets through structured sourcing, resilient logistics networks, purpose-built warehousing, and digital solutions executed with commercial integrity.&rdquo;
+                <div className="p-4 rounded-xl bg-muted/60 border border-border/80 text-xs sm:text-sm text-foreground italic leading-relaxed">
+                  &ldquo;To deploy a scalable, technology-enabled model that empowers one million women petty traders through cash grants, capacity building, and digital registration, while generating actionable data for inclusive policy-making and grassroots mobilization.&rdquo;
                 </div>
               </div>
-              <div className="mt-6 pt-4 border-t border-border/60 text-[11px] text-muted-foreground/80 flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary/70" />
-                <span>Approved Corporate Mission Slot</span>
+              <div className="mt-6 pt-4 border-t border-border/60 text-[11px] text-muted-foreground flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>1 Million Women Traders Target</span>
               </div>
             </div>
 
@@ -150,27 +164,35 @@ export default function AboutPage() {
             <div className="p-8 rounded-3xl liquid-glass text-card-foreground flex flex-col justify-between shadow-lg">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-accent text-accent-foreground flex items-center justify-center mb-6">
-                  <HeartHandshake className="w-6 h-6" />
+                  <HeartHandshake className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-3">Operating Principles</h3>
+                <h3 className="text-lg font-bold text-foreground mb-3">Institutional Values</h3>
                 <ul className="space-y-2.5 text-xs text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                    <span><strong>Integrity:</strong> Upholding contractual commitments and regulatory compliance in every trade exchange.</span>
+                    <span><strong>Clarity First:</strong> We diagnose before we deploy. Strategy before execution.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                    <span><strong>Integration:</strong> Unifying supply, storage, and transport into a cohesive delivery system.</span>
+                    <span><strong>Alignment Above All:</strong> Influence is not accidental; it is aligned.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                    <span><strong>Excellence:</strong> Delivering predictable timelines and high operational standards.</span>
+                    <span><strong>Cultural Intelligence:</strong> Deep understanding of the Nigerian and African market.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                    <span><strong>Impact-Driven:</strong> We measure success by tangible results, not activity.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                    <span><strong>Integrity:</strong> Trust through transparency and accountability.</span>
                   </li>
                 </ul>
               </div>
-              <div className="mt-6 pt-4 border-t border-border/60 text-[11px] text-muted-foreground/80 flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary/70" />
-                <span>Official IML Brand Values Slot</span>
+              <div className="mt-6 pt-4 border-t border-border/60 text-[11px] text-muted-foreground flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>5 Core Operating Tenets</span>
               </div>
             </div>
           </div>
